@@ -1,0 +1,207 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+section.formulario span{
+    color: palevioletred;
+
+}
+
+section.formulario{
+    padding: 0 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form input::placeholder{
+    color: palevioletred;
+}
+
+form textarea{
+    resize: none;
+    max-height: 150px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: palevioletred;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+form .btn-enviar input:hover{
+   box-shadow: 0px 0px 8px palevioletred;
+   transform: scale(1.05s);
+}
+
+
+/* footer */
+
+.flex{
+    display: flex;
+}
+
+
+footer{
+    padding: 30px 4%;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.321);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: palevioletred;
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+footer{
+    margin-top: 45px;
+}
+footer .line-footer p i{
+    color: palevioletred;
+    font-size: 22px;
+}
+footer .logo-footer{
+    gap: 50px;
+}
+
+footer .line-footer p a{
+    color: palevioletred;
+}
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid palevioletred;
+    text-align: left;
+    text-decoration: none;
+}
+footer .line-footer p{
+    color: palevioletred;
+}
+footer .line-footer p span{
+    color: white;
+    height: 100px;
+}
+
+
+
+/* Responsividade com Media Queries */
+@media (max-width: 1024px) {
+    header > .interface {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header nav ul {
+        gap: 10px;
+    }
+
+    .btn-contato button {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 2%;
+    }
+
+    .formulario h2 {
+        font-size: 24px;
+    }
+
+    form input, form textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    footer .flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 1%;
+    }
+
+    header nav ul li {
+        padding: 5px;
+    }
+
+    .btn-contato button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .formulario h2 {
+        font-size: 20px;
+    }
+
+    form input, form textarea {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    form .btn-enviar input {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .btn-social button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+        font-size: 12px;
+    }
+}

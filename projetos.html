@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>euuuu</title>
+    <link rel="stylesheet" href="projetos.css">
+
+    <style>
+        header{
+  padding: 40px 4%;
+  margin-bottom: 1px;
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 90px;
+}
+
+
+header a{
+       color: #dbd8d8;
+       text-decoration: none;
+       display: inline-block;
+}
+
+header a:hover{
+  color: #fff;
+  transform: scale(1.05);
+  transition: .2s;
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: palevioletred;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn-contato button:hover{
+  box-shadow: 0px 0px 8px palevioletred;
+}
+
+.botao{
+    display: inline-block;
+    background-color: black;
+    color: palevioletred;
+    padding: 10px 20px;
+    text-decoration: solid;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background 0.3s;
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
+}
+
+.botao:hover{
+    background-color: white;
+}
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+<div class="logo">
+         <a href="">
+            <img src="img/Logotipo Maquiadora_20241217_184323_0000.png" alt="Imagem da Logo" width="200" height="100">
+         </a>
+</div><!--logo-->
+
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="especiality.html">Especialidades</a></li>
+                <li><a href="projetos.html">Projectos</a></li>
+            </ul>
+        </nav>
+
+        <div class="btn-contato">
+        <a href="contato.html">
+            <button>Contacto</button>
+        </a>
+        </div><!--btn-contato-->
+        </div><!--Interface-->
+    
+    </header>
+
+    <div class="flex"></div>
+        <div class="interface-proj">
+            
+            <h2>MEU <span>PORTFÓLIO.</span></h2>
+            <div class="flex">
+                <div class="img-port" style="background-image: url(img/1.jpg);">
+                    <div class="overlay">Projecto 1</div>
+                </div>
+
+               
+
+                
+                <div class="img-port" style="background-image: url(img/2.jpg);">
+                    <div class="overlay">Projecto 2</div> 
+                </div>
+                <div class="img-port" style="background-image: url(img/3.jpg);">
+                    <div class="overlay">Projecto 3</div>
+                </div>
+            
+            </div>
+        </div><!--flex-->
+    
+</body>
+</html>

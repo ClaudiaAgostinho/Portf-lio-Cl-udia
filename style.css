@@ -1,0 +1,267 @@
+/*  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex{
+display: flex;
+}
+
+.btn-contato button{
+padding: 10px 40px;
+font-size: 18px;
+font-weight: 600;
+background-color: palevioletred;
+border: 0;
+border-radius: 30px;
+cursor: pointer;
+}
+
+
+/* ESTILO DO CABEÇALHO */
+header{
+  padding: 40px 4%;
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 90px;
+}
+
+
+header a{
+       color: #dbd8d8;
+       text-decoration: none;
+       display: inline-block;
+}
+
+header a:hover{
+  color: #fff;
+  transform: scale(1.15);
+  transition: .2s;
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: palevioletred;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn-contato button:hover{
+  box-shadow: 0px 0px 8px palevioletred;
+}
+
+/* ESTILO DO SITE */
+section.topo-do-site{
+padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+align-items: center;
+justify-content: center;
+gap: 90px;
+}
+
+.txt-topo-site h1{
+color: white;
+font-size: 38px;
+}
+
+.txt-topo-site h2{
+  color: white;
+}
+
+.txt-topo-site h1 span{
+ color: palevioletred;
+}
+
+.topo-do-site .txt-topo-site p{
+color: white;
+margin: 40px 0;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.topo-do-site .img-topo-site img{
+position: relative;
+animation: fluctuar 2s ease-in-out infinite alternate;
+border-radius: 25%;
+width: 200px;
+height: 200px;
+}
+@keyframes fluctuar{
+0%{
+  top: 0;
+}
+100%{
+  top: 30px;
+}
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+  header > .interface {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    padding: 10px 0;
+  }
+
+  .txt-topo-site h1 {
+    font-size: 30px;
+  }
+
+  .txt-topo-site p {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+
+  .topo-do-site .img-topo-site img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .btn-contato button {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .especialidades h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+
+/* Tablets e dispositivos médios */
+@media (max-width: 1024px) {
+  header > .interface {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .txt-topo-site h1 {
+    font-size: 28px;
+  }
+
+  .img-topo-site img {
+    width: 200px;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  header > .interface {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .btn-contato button {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .txt-topo-site h1 {
+    font-size: 24px;
+  }
+
+  .flex{
+    flex-direction: column-reverse;
+  }
+
+  .txt-topo-site p {
+    font-size: 16px;
+  }
+
+  .img-topo-site img {
+    width: 150px;
+  }
+
+  section.especialidades h2 {
+    font-size: 24px;
+  }
+}
+
+/* Smartphones menores */
+@media (max-width: 480px) {
+  .txt-topo-site h1 {
+    font-size: 20px;
+  }
+
+  .txt-topo-site p {
+    font-size: 14px;
+  }
+
+  .btn-contato button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .img-topo-site img {
+    width: 120px;
+  }
+
+  section.especialidades h2 {
+    font-size: 20px;
+  }
+}
